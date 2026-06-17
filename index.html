@@ -9,11 +9,16 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
+    <!-- HERO SECTION (PRIMEIRA DOBRA) -->
     <header class="bg-slate-900 text-white pt-16 pb-20 px-6">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
             
-            <div class="md:w-1/2 space-y-6">
+            <!-- Textos e Capa -->
+            <div class="md:w-1/2 space-y-6 flex flex-col items-center md:items-start text-center md:text-left">
                 <span class="text-amber-500 font-semibold tracking-wider uppercase text-sm">Lançamento Exclusivo</span>
+                
+                <img src="capa.png" alt="Capa A Bíblia Sem Versículos" class="w-48 md:w-56 rounded-r-xl shadow-2xl border-l-4 border-amber-800 mb-2">
+
                 <h1 class="text-4xl md:text-5xl font-bold leading-tight">
                     A frustração nasce quando você lê o livro certo tentando encontrar as respostas erradas.
                 </h1>
@@ -22,12 +27,14 @@
                 </p>
             </div>
 
+            <!-- Formulário de Captura -->
             <div class="md:w-1/2 w-full max-w-md bg-white text-slate-800 p-8 rounded-xl shadow-2xl">
                 <h3 class="text-2xl font-bold text-center mb-2">Leia o 1º Capítulo Grátis</h3>
                 <p class="text-center text-sm text-slate-500 mb-6">Preencha abaixo para receber o material e ser avisado sobre os próximos lançamentos.</p>
                 
+                <!-- IMPORTANTE: Substitua SEU_EMAIL_AQUI pelo seu e-mail real -->
                 <form action="https://formsubmit.co/SEU_EMAIL_AQUI" method="POST" class="space-y-4">
-                    <input type="hidden" name="_next" value="https://projeto-livrosparauma-vida-plena.vercel.app/obrigado">
+                    <input type="hidden" name="_next" value="https://projeto-livrosparauma-vida-plena.vercel.app/obrigado.html">
                     <input type="hidden" name="_captcha" value="false">
 
                     <div>
@@ -42,7 +49,7 @@
                         <label class="block text-sm font-medium mb-1">WhatsApp (com DDD)</label>
                         <input type="tel" name="whatsapp" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none">
                     </div>
-                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3 px-4 rounded-lg transition-colors text-lg mt-4">
+                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3 px-4 rounded-lg transition-colors text-lg mt-4 shadow-md">
                         Quero Meu Capítulo Grátis <i class="fas fa-arrow-right ml-2"></i>
                     </button>
                 </form>
@@ -51,8 +58,8 @@
         </div>
     </header>
 
+    <!-- O PROBLEMA E A SOLUÇÃO -->
     <section class="py-20 px-6 max-w-5xl mx-auto space-y-16">
-        
         <div class="text-center space-y-6">
             <h2 class="text-3xl font-bold text-slate-900">A prisão das frases soltas</h2>
             <p class="text-lg text-slate-600 max-w-3xl mx-auto">
@@ -87,10 +94,36 @@
         </div>
     </section>
 
+    <!-- SINOPSE OFICIAL -->
+    <section class="py-20 px-6 bg-white border-y border-slate-100">
+        <div class="max-w-4xl mx-auto space-y-8">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">Sobre a Obra</h2>
+            
+            <div class="text-lg text-slate-700 space-y-6 leading-relaxed md:text-justify">
+                <p>
+                    Entre o Jardim original e a Cidade futura existe um <strong>Eixo</strong>. Ele atravessa toda a história bíblica, sustenta cada narrativa e converge em um único ponto — o duplo abraço da Cruz, onde o homem perfeito abraçou a Deus e Deus abraçou a humanidade imperfeita.
+                </p>
+                <p>
+                    Esse Eixo sempre esteve lá. Mas a leitura por versículos isolados o tornou invisível.
+                </p>
+                <p>
+                    Neste livro, o professor e escritor Luiz Henrique Magalhães propõe uma virada: abandonar o mapa de endereços bíblicos e recuperar a visão da narrativa completa. Não como exercício acadêmico, mas como ato de libertação. Porque quando você enxerga o Eixo, a Bíblia para de ser um arsenal de argumentos e se torna o que sempre foi — a história de um Criador que preferiu o risco do nosso sofrimento à segurança de um amor programado.
+                </p>
+                
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg mt-8">
+                    <p class="font-bold text-xl text-amber-900 text-center italic">
+                        "A Bíblia sem Versículos não é um livro sobre como ler a Bíblia. É um livro sobre como parar de se esconder atrás dela — e finalmente ser encontrado por quem sempre esteve te procurando."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE O AUTOR -->
     <section class="bg-slate-100 py-20 px-6">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
-            <div class="w-48 h-48 rounded-full bg-slate-300 overflow-hidden flex-shrink-0 shadow-lg">
-                <img src="URL_DA_SUA_FOTO_AQUI.jpg" alt="Foto do Autor" class="w-full h-full object-cover">
+            <div class="w-48 h-48 rounded-full border-4 border-white overflow-hidden flex-shrink-0 shadow-lg">
+                <img src="foto-autor.png" alt="Luiz Henrique Magalhães" class="w-full h-full object-cover">
             </div>
             <div class="space-y-4">
                 <h2 class="text-3xl font-bold text-slate-900">Sobre o Autor</h2>
@@ -104,64 +137,64 @@
         </div>
     </section>
 
-    <section class="py-20 px-6 max-w-5xl mx-auto space-y-12">
-        <div class="text-center">
-            <h2 class="text-3xl font-bold text-slate-900">Escolha o Melhor Formato para Você</h2>
-            <p class="text-lg text-slate-600 mt-3">Adquira agora a versão completa de "A Bíblia Sem Versículos".</p>
-        </div>
-
-        <div class="flex flex-col md:flex-row justify-center gap-8">
-            
-            <div class="bg-white border-2 border-amber-400 rounded-2xl p-8 md:w-1/2 relative shadow-xl transform hover:-translate-y-1 transition-transform">
-                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-amber-500 text-slate-900 font-bold px-4 py-1 rounded-full text-sm">
-                    Recomendado
-                </div>
-                <h3 class="text-2xl font-bold mb-2">A Experiência Completa</h3>
-                <p class="text-slate-500 mb-6">Livro Físico (Papel)</p>
-                
-                <ul class="space-y-3 mb-8 text-slate-700">
-                    <li><i class="fas fa-check text-green-500 mr-2"></i> Toque e sinta as páginas</li>
-                    <li><i class="fas fa-check text-green-500 mr-2"></i> Faça suas anotações nas margens</li>
-                    <li><i class="fas fa-check text-green-500 mr-2"></i> Tenha a obra na sua estante</li>
-                    <li><i class="fas fa-check text-green-500 mr-2"></i> Compra 100% Segura pela Hotmart</li>
-                </ul>
-
-                <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 text-center">
-                    <span class="block text-sm text-amber-800 mb-1">Cupom Especial de Lançamento:</span>
-                    <span class="block font-mono text-xl font-bold text-slate-900 border-2 border-dashed border-slate-900 inline-block px-4 py-1 rounded tracking-widest">LANCAMENTO</span>
-                </div>
-
-                <a href="#" class="block text-center w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-4 rounded-lg transition-colors text-lg">
-                    Garantir Livro Físico
-                </a>
+    <!-- OFERTA FINAL -->
+    <section class="py-20 px-6 bg-slate-900 text-white">
+        <div class="max-w-3xl mx-auto space-y-12">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white">Adquira a Experiência Completa</h2>
+                <p class="text-lg text-slate-400 mt-3">Tenha a obra física em suas mãos com um desconto exclusivo.</p>
             </div>
 
-            <div class="bg-white border border-slate-200 rounded-2xl p-8 md:w-1/2 relative shadow-md transform hover:-translate-y-1 transition-transform">
-                <h3 class="text-2xl font-bold mb-2">Leitura Imediata</h3>
-                <p class="text-slate-500 mb-6">E-book (Amazon Kindle)</p>
-                
-                <ul class="space-y-3 mb-8 text-slate-700">
-                    <li><i class="fas fa-check text-green-500 mr-2"></i> Comece a ler em 1 minuto</li>
-                    <li><i class="fas fa-check text-green-500 mr-2"></i> Leia no celular, tablet ou Kindle</li>
-                    <li><i class="fas fa-check text-green-500 mr-2"></i> Menor investimento financeiro</li>
-                    <li><i class="fas fa-check text-green-500 mr-2"></i> Sem custo de frete</li>
-                </ul>
-
-                <div class="py-4 mb-6 text-center">
-                    <span class="block text-sm text-slate-500">Adquira diretamente na loja da</span>
-                    <span class="block font-bold text-2xl text-slate-800 mt-1"><i class="fab fa-amazon text-amber-500 mr-2"></i>Amazon</span>
+            <!-- OPÇÃO FÍSICA (Design Horizontal) -->
+            <div class="bg-white text-slate-900 border-2 border-amber-400 rounded-2xl p-8 relative shadow-2xl flex flex-col md:flex-row items-center gap-8">
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-amber-500 text-slate-900 font-bold px-6 py-1 rounded-full text-sm uppercase tracking-wide">
+                    Oferta de Lançamento
                 </div>
+                
+                <!-- Imagem -->
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <img src="capa.png" alt="Livro Físico" class="w-40 md:w-48 rounded shadow-lg">
+                </div>
+                
+                <!-- Detalhes e Compra -->
+                <div class="w-full md:w-2/3 flex flex-col">
+                    <h3 class="text-2xl font-bold mb-1">A Bíblia Sem Versículos</h3>
+                    <p class="text-slate-500 mb-4">Livro Impresso (122 páginas)</p>
+                    
+                    <ul class="space-y-2 mb-6 text-slate-700 text-sm">
+                        <li><i class="fas fa-check text-green-500 w-5 text-center"></i> <strong>Formato:</strong> 14x21cm</li>
+                        <li><i class="fas fa-check text-green-500 w-5 text-center"></i> <strong>Conforto Visual:</strong> Papel Creme 80g/m²</li>
+                        <li><i class="fas fa-leaf text-green-500 w-5 text-center"></i> <strong>Produção Sustentável:</strong> Impresso sob demanda*</li>
+                        <li><i class="fas fa-shield-alt text-green-500 w-5 text-center"></i> Compra Segura via Hotmart</li>
+                    </ul>
 
-                <a href="#" class="block text-center w-full border-2 border-slate-900 text-slate-900 hover:bg-slate-50 font-bold py-4 px-4 rounded-lg transition-colors text-lg">
-                    Ler Agora no Kindle
-                </a>
+                    <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-6 text-center">
+                        <span class="block text-sm text-amber-800 mb-1">Use o cupom abaixo no checkout:</span>
+                        <span class="block font-mono text-xl font-bold text-slate-900 border-2 border-dashed border-slate-900 inline-block px-4 py-1 rounded tracking-widest">LANCAMENTO</span>
+                    </div>
+
+                    <a href="https://pay.hotmart.com/Q106371449L" target="_blank" class="block text-center w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-4 px-4 rounded-lg transition-colors text-lg shadow-md">
+                        Garantir Livro Físico Agora
+                    </a>
+                    
+                    <p class="text-xs text-slate-400 mt-4 text-center italic leading-tight">
+                        *Seu livro será produzido especialmente para você. O prazo de entrega leva alguns dias a mais para evitar desperdícios e ajudar o planeta.
+                    </p>
+                </div>
             </div>
-
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 text-center py-8">
-        <p>&copy; 2026 A Bíblia Sem Versículos. Todos os direitos reservados.</p>
+    <!-- RODAPÉ -->
+    <footer class="bg-slate-950 text-slate-400 py-10 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+            <p>&copy; 2026 A Bíblia Sem Versículos. Todos os direitos reservados.</p>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5533999333644" target="_blank" class="hover:text-amber-500 transition-colors flex items-center">
+                    <i class="fab fa-whatsapp text-xl mr-2"></i> (33) 99933-3644
+                </a>
+            </div>
+        </div>
     </footer>
 
 </body>
